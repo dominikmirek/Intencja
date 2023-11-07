@@ -6,12 +6,79 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/lc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Podaj c"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lb" />
+
+    <EditText
+        android:id="@+id/lb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Podaj b"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/la" />
+
+    <Button
+        android:id="@+id/trojkat"
+        android:layout_width="156dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="75dp"
+        android:text="Trojkat"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Prostokat"
+        android:layout_width="156dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="75dp"
+        android:text="Prostokat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Kolo"
+        android:layout_width="156dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginBottom="58dp"
+        android:text="Kolo"
+        app:layout_constraintBottom_toTopOf="@+id/trojkat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/kwadrat"
+        android:layout_width="156dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="58dp"
+        android:text="Kwadrat"
+        app:layout_constraintBottom_toTopOf="@+id/Prostokat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/la"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Podaj a "
+        android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
